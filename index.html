@@ -21,52 +21,11 @@
     <meta property="og:description" content="Connecting companies with top-tier executive talent, market research insights, and innovative workforce tools.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            red: '#E50914',
-                            redHover: '#B90910',
-                            brightRed: '#FF1E27',
-                            darkRed: '#500000',
-                            black: '#0A0A0A',
-                            surface: '#F8F9FA',
-                            card: '#FFFFFF',
-                            border: '#E4E4E7',
-                            lightGray: '#F4F4F5'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-                    },
-                    screens: {
-                        'xs': '375px',
-                        'sm': '640px',
-                        'md': '768px',
-                        'lg': '1024px',
-                        'xl': '1280px',
-                        '2xl': '1536px',
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                    },
-                    keyframes: {
-                        glow: {
-                            '0%': { boxShadow: '0 0 15px rgba(229, 9, 20, 0.15)' },
-                            '100%': { boxShadow: '0 0 30px rgba(229, 9, 20, 0.35)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/styles.css">
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Structured Data JSON-LD for SEO -->
     <script type="application/ld+json">
@@ -284,7 +243,7 @@
                             </div>
                             <div class="md:col-span-5">
                                 <div class="relative rounded-2xl overflow-hidden border border-zinc-200 group shadow-md">
-                                    <img id="heroServiceImg" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80" alt="Executive Recruitment Showcase" class="w-full h-48 sm:h-56 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                    <img id="heroServiceImg" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=65&fm=webp" alt="Executive Recruitment Showcase" width="700" height="467" fetchpriority="high" decoding="async" class="w-full h-48 sm:h-56 object-cover transform group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                                     <div class="absolute bottom-4 left-4 right-4 text-xs font-semibold text-white flex justify-between items-center">
                                         <span>Success Rate</span>
@@ -360,11 +319,11 @@
 
                     <div class="lg:col-span-5">
                         <div class="relative rounded-3xl overflow-hidden glass-card p-2.5 sm:p-3 shadow-xl">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="New Origin Consulting Team" class="rounded-2xl w-full object-cover h-64 sm:h-80 lg:h-96 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=65&fm=webp" alt="New Origin Consulting Team" width="800" height="534" loading="lazy" decoding="async" class="rounded-2xl w-full object-cover h-64 sm:h-80 lg:h-96 shadow-md">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-brand-black/20 to-transparent"></div>
                             <div class="absolute bottom-6 left-6 right-6">
                                 <span class="bg-brand-red text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block">Trusted Strategic Advisory</span>
-                                <h4 class="text-white font-bold text-lg sm:text-xl">Driving Global Enterprise Growth</h4>
+                                <h3 class="text-white font-bold text-lg sm:text-xl">Driving Global Enterprise Growth</h3>
                             </div>
                         </div>
                     </div>
@@ -455,7 +414,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                         <div id="market-mapping" class="glass-card rounded-2xl p-5 sm:p-6 bg-white">
                             <div class="text-brand-red text-2xl mb-3 sm:mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-2">1. Market Mapping</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-2">1. Market Mapping</h3>
                             <p class="text-zinc-600 text-xs leading-relaxed">
                                 Identify where talent is available and plan your recruitment strategies accordingly with our detailed market mapping services.
                             </p>
@@ -463,7 +422,7 @@
 
                         <div class="glass-card rounded-2xl p-5 sm:p-6 bg-white">
                             <div class="text-brand-red text-2xl mb-3 sm:mb-4"><i class="fa-solid fa-brain"></i></div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-2">2. Talent Intelligence</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-2">2. Talent Intelligence</h3>
                             <p class="text-zinc-600 text-xs leading-relaxed">
                                 Gain insights into industry trends, talent movement, and competitor dynamics to make confident, data-driven decisions.
                             </p>
@@ -471,7 +430,7 @@
 
                         <div class="glass-card rounded-2xl p-5 sm:p-6 bg-white">
                             <div class="text-brand-red text-2xl mb-3 sm:mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-2">3. Compensation Trends & Benchmarking</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-2">3. Compensation Trends & Benchmarking</h3>
                             <p class="text-zinc-600 text-xs leading-relaxed">
                                 Stay competitive by understanding compensation trends within your industry, helping you offer attractive salary packages.
                             </p>
@@ -479,7 +438,7 @@
 
                         <div class="glass-card rounded-2xl p-5 sm:p-6 bg-white">
                             <div class="text-brand-red text-2xl mb-3 sm:mb-4"><i class="fa-solid fa-sliders"></i></div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-2">4. Customized Research</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-2">4. Customized Research</h3>
                             <p class="text-zinc-600 text-xs leading-relaxed">
                                 We provide in-depth research tailored to your specific business needs, offering actionable insights for better decision-making.
                             </p>
@@ -501,7 +460,7 @@
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center text-lg sm:text-xl mb-4">
                                 <i class="fa-solid fa-code"></i>
                             </div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Technology Hiring</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Technology Hiring</h3>
                             <ul class="space-y-2 text-xs text-zinc-600 font-medium">
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Engineering</li>
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Product</li>
@@ -516,7 +475,7 @@
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center text-lg sm:text-xl mb-4">
                                 <i class="fa-solid fa-headset"></i>
                             </div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Customer Support</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Customer Support</h3>
                             <ul class="space-y-2 text-xs text-zinc-600 font-medium">
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Team Lead</li>
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Customer Support Executive</li>
@@ -528,7 +487,7 @@
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center text-lg sm:text-xl mb-4">
                                 <i class="fa-solid fa-chart-line"></i>
                             </div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Sales</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Sales</h3>
                             <ul class="space-y-2 text-xs text-zinc-600 font-medium">
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Account Executive</li>
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Account Manager</li>
@@ -540,7 +499,7 @@
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center text-lg sm:text-xl mb-4">
                                 <i class="fa-solid fa-gears"></i>
                             </div>
-                            <h4 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Strategy & Operations</h4>
+                            <h3 class="text-base sm:text-lg font-bold text-brand-black mb-3 border-b border-zinc-100 pb-2">Strategy & Operations</h3>
                             <ul class="space-y-2 text-xs text-zinc-600 font-medium">
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Strategy & Operations Lead</li>
                                 <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-red text-[10px]"></i> Business Operations</li>
@@ -958,7 +917,7 @@
 
                 <!-- Col 2: Services Quick Links -->
                 <div>
-                    <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Services</h4>
+                    <h3 class="text-white font-bold mb-4 uppercase tracking-wider">Services</h3>
                     <ul class="space-y-2.5">
                         <li><a href="#services" onclick="navigateTo('services', 'executive-recruitment')" class="hover:text-brand-brightRed transition-colors">Executive Recruitment</a></li>
                         <li><a href="#services" onclick="navigateTo('services', 'technical-recruitment')" class="hover:text-brand-brightRed transition-colors">Technical Hiring</a></li>
@@ -969,7 +928,7 @@
 
                 <!-- Col 3: Products & Tools -->
                 <div>
-                    <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Products</h4>
+                    <h3 class="text-white font-bold mb-4 uppercase tracking-wider">Products</h3>
                     <ul class="space-y-2.5">
                         <li><a href="#products" onclick="navigateTo('products')" class="hover:text-brand-brightRed transition-colors">ERR Portal</a></li>
                         <li><a href="#products" onclick="navigateTo('products')" class="hover:text-brand-brightRed transition-colors">Interview Scheduler</a></li>
@@ -980,7 +939,7 @@
 
                 <!-- Col 4: Contact & Social -->
                 <div>
-                    <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Contact & Social</h4>
+                    <h3 class="text-white font-bold mb-4 uppercase tracking-wider">Contact & Social</h3>
                     <p class="mb-2">Email: hr@neworigin.in</p>
                     <p class="mb-4">Phone: +91 9380949208</p>
                     <div class="flex space-x-3 text-base">
@@ -991,7 +950,7 @@
 
             </div>
 
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-zinc-500 gap-4 text-center sm:text-left">
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-zinc-400 gap-4 text-center sm:text-left">
                 <p>&copy; 2026 New Origin Consulting Services. All rights reserved.</p>
                 <div class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
                     <a href="#home" class="hover:text-zinc-300">Privacy Policy</a>
@@ -1278,7 +1237,7 @@
                 icon: "fa-user-tie",
                 title: "Connecting You With Visionary Leaders",
                 desc: "We identify and place C-suite, VP, and Director-level executive leadership aligned with your corporate strategy, culture, and long-term vision.",
-                img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80",
+                img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=65&fm=webp",
                 serviceId: "executive-recruitment"
             },
             cert: {
@@ -1286,7 +1245,7 @@
                 icon: "fa-award",
                 title: "Certify & Elevate Your In-House Talent Team",
                 desc: "Equip your recruiters with modern tech sourcing, AI candidate discovery, competitive market research techniques, and certified screening methodologies.",
-                img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=80",
+                img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=65&fm=webp",
                 serviceId: "recruiter-training"
             },
             tech: {
@@ -1294,7 +1253,7 @@
                 icon: "fa-laptop-code",
                 title: "High-Caliber Software & AI Engineers",
                 desc: "Niche engineering recruitment across Cloud Architecture, Generative AI, Full-Stack Engineering, Data Science, and Cybersecurity.",
-                img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80",
+                img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=65&fm=webp",
                 serviceId: "technical-recruitment"
             },
             market: {
@@ -1302,7 +1261,7 @@
                 icon: "fa-chart-network",
                 title: "Data-Driven Market Intelligence & Benchmarking",
                 desc: "Comprehensive talent ecosystem mapping, competitor organizational charts, compensation benchmarking, and talent availability reports.",
-                img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80",
+                img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=65&fm=webp",
                 serviceId: "market-mapping"
             }
         };
