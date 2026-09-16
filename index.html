@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
     <!-- SEO Meta Tags -->
-    <title>New Origin | Executive & Technical Recruitment</title>
-    <meta name="description" content="New Origin Consulting Services is a premier HR consulting firm specializing in Executive Recruitment, Recruiter Certification, Technical Hiring, Market Mapping, and Talent Intelligence.">
+    <title>Recruitment &amp; Executive Search Firm in India | New Origin</title>
+    <meta name="description" content="New Origin is a recruitment and executive search firm in India serving Hyderabad, Bengaluru, Delhi, Mumbai, Pune and Chennai with leadership, product and technical hiring.">
     <meta name="keywords" content="HR Consulting, Executive Recruitment, Technical Recruitment, Recruiter Training, Market Mapping, Talent Intelligence, Diversity Portal, ERR Portal">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="B-j9M_CPU9LEQjt5unzlk97dYOdvLxE2lNwMFWzJTM4">
@@ -223,10 +223,10 @@
                             <i class="fa-solid fa-sparkles"></i> Premier Talent Intelligence & Executive Hiring
                         </span>
                         <h1 class="text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-brand-black mb-4 sm:mb-6 leading-tight">
-                            Building a <span class="text-gradient-red">Future-Ready</span> Workforce.
+                            Executive Search &amp; <span class="text-gradient-red">Recruitment</span> in India.
                         </h1>
                         <p class="text-sm sm:text-lg lg:text-xl text-zinc-600 font-normal leading-relaxed max-w-2xl mx-auto px-2">
-                            Empowering enterprise organizations with executive search, certified recruiter training, specialized technical hiring, and market intelligence.
+                            Helping organizations hire leaders, product specialists and technical talent across Hyderabad, Bengaluru, Delhi, Mumbai, Pune and Chennai.
                         </p>
                     </div>
 
@@ -1629,7 +1629,10 @@ Client Contact Details:
 
         // Initialize application on window load
         window.onload = function() {
-            navigateTo('home');
+            const requestedPage = window.location.hash.replace('#', '');
+            const validPages = ['home', 'about', 'services', 'products', 'jobs', 'events', 'news', 'contact'];
+            const initialPage = requestedPage === 'careers' ? 'jobs' : requestedPage;
+            navigateTo(validPages.includes(initialPage) ? initialPage : 'home');
             initHeroCanvas();
         };
     </script>
